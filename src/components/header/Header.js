@@ -20,8 +20,6 @@ const Header = () => {
         </div>
 
         <FOOD>
-          <input placeholder="Search artwork" />
-
           <DIVStyle>
             <div>
               <img src={icons} alt="photo" />
@@ -110,25 +108,7 @@ const FOOD = styled("div")`
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  width: 700px;
-  & input {
-    width: 322px;
-    height: 25px;
-    border-radius: 10px;
-    outline: none;
-    padding: 10px;
-    background: #373943;
-  }
-  & input::placeholder {
-    width: 78px;
-    height: 21px;
-    font-family: "Oswald";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: #828282;
-  }
+  width: 300px;
 `;
 const UL = styled("ul")`
   display: flex;
@@ -143,6 +123,7 @@ const UL = styled("ul")`
   color: white;
   order: 0;
   flex-grow: 0;
+  margin-left: -310px;
   & li {
     list-style: none;
     cursor: pointer;
